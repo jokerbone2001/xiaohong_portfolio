@@ -2,9 +2,10 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import corpcommentImg from "@/public/corpcomment.png";
-import rmtdevImg from "@/public/rmtdev.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
+import { HiOutlineLightBulb } from "react-icons/hi";
+import sonwlyImg from "@/public/corpcomment.png";
+import batchshipImg from "@/public/rmtdev.png";
+import promatchImg from "@/public/wordanalytics.png";
 
 export const links = [
   {
@@ -35,52 +36,76 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
+    title: "B.Sc. in Computer Science",
+    location: "Simon Fraser University, Burnaby, BC",
     description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
+      "Completed my bachelor's degree in Computer Science, building a strong foundation in software development and computer science principles.",
     icon: React.createElement(LuGraduationCap),
-    date: "2019",
+    date: "2019 - 2024",
   },
   {
-    title: "Front-End Developer",
-    location: "Orlando, FL",
+    title: "M.Eng in Systems Design Engineering",
+    location: "University of Waterloo, Waterloo, ON",
     description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
+      "Currently pursuing Master's degree focusing on system design, AI applications and advanced software engineering principles.",
+    icon: React.createElement(LuGraduationCap),
+    date: "2024 - Present (Expected 2025)",
+  },
+  {
+    title: "Full-Stack Engineer Intern",
+    location: "Batchship.Inc. (MERN Stack, Nextjs, Redux, JWT, AWS)",
+    description:
+      "Integrated APIs from UPS, USPS, Amazon, GLS, FedEx for shipping service support in warehouse management system used by 50+ clients. Developed single/batch order uploads, rate calculations, Stripe online payments, and order sync with Shipstation/TikTok, reducing task time by 60%. Collaborated on responsive landing page design. Built secure, scalable APIs for carrier integrations and resolved technical issues including failed shipments and API challenges.",
     icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
+    date: "Feb 2024 - Nov 2024",
   },
   {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
+    title: "Web Developer Intern",
+    location: "LeGT.ai",
     description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
+      "Automated H1B visa application process reducing manual effort by 50%. Integrated ChatGPT API to streamline O-1 visa template generation for legal professionals.",
+    icon: React.createElement(CgWorkAlt),
+    date: "Nov 2023 - Feb 2024",
+  },
+  {
+    title: "Software Engineer Co-op",
+    location: "Hackhub",
+    description:
+      "Developed responsive websites for robotics platform and hackathon competition. Enhanced and maintained full-stack platform supporting 500+ contestants across dual-location events in USA and China.",
+    icon: React.createElement(CgWorkAlt),
+    date: "Aug 2023 - Jan 2024",
+  },
+  {
+    title: "Full Stack Developer (Freelance)",
+    location: "Remote",
+    description:
+      "Currently pursuing Master's degree in Systems Design Engineering at University of Waterloo while working on freelance projects including Sonwly App and Promatch.",
     icon: React.createElement(FaReact),
-    date: "2021 - present",
+    date: "Sep 2024 - Present",
   },
 ] as const;
 
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "Sonwly App",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-    imageUrl: corpcommentImg,
+      "Full-stack WeChat mini-app and React Native mobile app displaying 10+ ski resort data with real-time group chats, social features (follow/like/posts), and e-commerce platform with merchant dashboards. Implemented Spring Boot/MyBatis backend with JWT/OAuth security, MySQL/MongoDB databases, Redis caching, and FCM push notifications. Automated ski condition extraction from 10+ resorts using Selenium/BeautifulSoup on AWS EC2, serving 1,000+ users in BC and California.",
+    tags: ["React Native", "Spring Boot", "MySQL", "Redis", "AWS EC2"],
+    imageUrl: sonwlyImg,
   },
   {
-    title: "rmtDev",
+    title: "Batchship Integration",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    imageUrl: rmtdevImg,
+      "Integrated APIs from multiple carriers and developed features for a warehouse management system used by 50+ clients. Implemented order upload, rate calculations, and online payments with Stripe.",
+    tags: ["MERN Stack", "Next.js", "Redux", "AWS", "CircleCI"],
+    imageUrl: batchshipImg,
   },
   {
-    title: "Word Analytics",
+    title: "Promatch ATS",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: wordanalyticsImg,
+      "Led team of 2 developers building AI-powered ATS with Qwen API for interview analysis and Xfyun API for speech-to-text. Designed end-to-end solutions with backend AI logic and prompt engineering. Implemented features for generating job descriptions, interview questions, and automated email templates. Developed AI-driven interview system with real-time transcription and automated scoring of candidate responses.",
+    tags: ["Next.js", "Express.js", "MongoDB", "LLMs", "AI APIs"],
+    imageUrl: promatchImg,
   },
 ] as const;
 
@@ -90,18 +115,30 @@ export const skillsData = [
   "JavaScript",
   "TypeScript",
   "React",
+  "React Native",
   "Next.js",
   "Node.js",
+  "Express.js",
+  "Spring Boot",
+  "MyBatis",
+  "C/C++",
+  "Java",
+  "Python",
   "Git",
   "Tailwind",
-  "Prisma",
   "MongoDB",
+  "MySQL",
+  "Redis",
+  "AWS",
+  "Microsoft Azure",
+  "JWT",
   "Redux",
-  "GraphQL",
-  "Apollo",
-  "Express",
-  "PostgreSQL",
-  "Python",
-  "Django",
+  "REST APIs",
+  "Prompt Engineering",
+  "Selenium",
+  "BeautifulSoup",
+  "OpenAI API",
+  "Qwen API",
+  "Xfyun API",
   "Framer Motion",
 ] as const;
