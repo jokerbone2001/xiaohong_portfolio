@@ -18,7 +18,7 @@ export default function Intro() {
     <section
       ref={ref}
       id="home"
-      className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]"
+      className="mb-28 w-[70vw] text-center sm:mb-0 scroll-mt-[100rem]"
     >
       <div className="flex items-center justify-center">
         <div className="relative">
@@ -31,8 +31,8 @@ export default function Intro() {
             }}
           >
             <Image
-              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?fit=crop&w=368&h=368&q=100"
-              alt="Ricardo portrait"
+              src="/work-images.jpg"
+              alt="Xiaohong Xu"
               width="192"
               height="192"
               quality="95"
@@ -56,20 +56,25 @@ export default function Intro() {
           </motion.span>
         </div>
       </div>
-
       <motion.h1
-        className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl"
+        className="mb-10 mt-4 px-4 text-xl font-medium !leading-[1.5] sm:text-2xl"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <span className="font-bold">Hello, I'm XIAOHONG XU.</span> I'm a{" "}
-        <span className="font-bold">Master of Engineering candidate</span> at{" "}
-        <span className="font-bold">University of Waterloo</span>, specializing
-        in <span className="underline">Systems Design Engineering</span>. I have
-        experience in <span className="italic">full-stack development</span> and{" "}
-        <span className="italic">AI applications</span>.
+        Hello, I'm <span className="font-bold">XIAOHONG XU.</span> I'm currently
+        pursuing my <span className="font-bold">Master of Engineering</span> in{" "}
+        <span className="font-bold">Systems Design Engineering</span> at the{" "}
+        <span className="font-bold">University of Waterloo</span>, after earning
+        my B.Sc. in <span className="font-bold">Computer Science</span> from
+        <span className="font-bold"> Simon Fraser University</span>. I have
+        hands-on experience in{" "}
+        <span className="italic font-bold">full-stack development</span>,{" "}
+        <span className="italic font-bold">AI applications</span>, and{" "}
+        <span className="italic font-bold">cloud solutions</span>. I've
+        contributed to startups and established teams, building scalable web
+        platforms, management dashboard, automating workflows, and leading
+        projects from concept to deployment.
       </motion.h1>
-
       <motion.div
         className="flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium"
         initial={{ opacity: 0, y: 100 }}
@@ -92,7 +97,7 @@ export default function Intro() {
 
         <a
           className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
-          href="/CV.pdf"
+          href="/Resume_work_2025_2.pdf"
           download
         >
           Download CV{" "}

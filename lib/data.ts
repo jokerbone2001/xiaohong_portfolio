@@ -3,10 +3,11 @@ import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 import { HiOutlineLightBulb } from "react-icons/hi";
-import sonwlyImg from "@/public/corpcomment.png";
-import batchshipImg from "@/public/rmtdev.png";
-import promatchImg from "@/public/wordanalytics.png";
-
+import sonwlyImg from "@/public/image/snowly.png";
+import batchshipImg from "@/public/image/batchship2.png";
+import promatchImg from "@/public/image/promatch.png";
+import cygaImg from "@/public/image/cyga.png";
+import hackhubkidImg from "@/public/image/hackhubkid.png";
 export const links = [
   {
     name: "Home",
@@ -33,7 +34,6 @@ export const links = [
     hash: "#contact",
   },
 ] as const;
-
 export const experiencesData = [
   {
     title: "B.Sc. in Computer Science",
@@ -41,23 +41,23 @@ export const experiencesData = [
     description:
       "Completed my bachelor's degree in Computer Science, building a strong foundation in software development and computer science principles.",
     icon: React.createElement(LuGraduationCap),
-    date: "2019 - 2024",
+    date: "Sep 2019 - Jun 2024",
   },
   {
-    title: "M.Eng in Systems Design Engineering",
-    location: "University of Waterloo, Waterloo, ON",
+    title: "Software Engineer Co-op",
+    location: "Hackhub, Vancouver, BC",
     description:
-      "Currently pursuing Master's degree focusing on system design, AI applications and advanced software engineering principles.",
-    icon: React.createElement(LuGraduationCap),
-    date: "2024 - Present (Expected 2025)",
-  },
-  {
-    title: "Full-Stack Engineer Intern",
-    location: "Batchship.Inc. (MERN Stack, Nextjs, Redux, JWT, AWS)",
-    description:
-      "Integrated APIs from UPS, USPS, Amazon, GLS, FedEx for shipping service support in warehouse management system used by 50+ clients. Developed single/batch order uploads, rate calculations, Stripe online payments, and order sync with Shipstation/TikTok, reducing task time by 60%. Collaborated on responsive landing page design. Built secure, scalable APIs for carrier integrations and resolved technical issues including failed shipments and API challenges.",
+      "Developed responsive websites for robotics platform and hackathon competition. Enhanced and maintained full-stack platform supporting 500+ contestants across dual-location events in USA and China.",
     icon: React.createElement(CgWorkAlt),
-    date: "Feb 2024 - Nov 2024",
+    date: "Aug 2023 - Jan 2024",
+  },
+  {
+    title: "Web Developer & Event Organizer (Volunteer)",
+    location: "Canadian Young Golf Association, Vancouver, BC",
+    description:
+      "Collaborated with a team to develop the association's official website, improving user experience and boosting online engagement. Led the planning and execution of golf competitions, managing logistics and volunteers, and enhancing leadership and organizational skills.",
+    icon: React.createElement(HiOutlineLightBulb),
+    date: "Jul 2023 - Present",
   },
   {
     title: "Web Developer Intern",
@@ -68,47 +68,75 @@ export const experiencesData = [
     date: "Nov 2023 - Feb 2024",
   },
   {
-    title: "Software Engineer Co-op",
-    location: "Hackhub",
+    title: "Full-Stack Engineer Intern",
+    location: "Batchship.Inc. Santa Fe Springs, CA, USA · Remote",
     description:
-      "Developed responsive websites for robotics platform and hackathon competition. Enhanced and maintained full-stack platform supporting 500+ contestants across dual-location events in USA and China.",
+      "Integrated APIs from UPS, USPS, Amazon, GLS, FedEx to support B2B shipping services for a warehouse management system used by 100+ business clients. Developed single/batch order uploads, rate calculations, Stripe online payments, and order sync with Shipstation/TikTok, reducing task time by 60%. Collaborated on responsive landing page design. Built secure, scalable APIs for carrier integrations and resolved technical issues including failed shipments and API challenges.",
     icon: React.createElement(CgWorkAlt),
-    date: "Aug 2023 - Jan 2024",
+    date: "Feb 2024 - Nov 2024",
   },
   {
     title: "Full Stack Developer (Freelance)",
-    location: "Remote",
+    location: "Sonwly App / Promatch / Remote",
     description:
-      "Currently pursuing Master's degree in Systems Design Engineering at University of Waterloo while working on freelance projects including Sonwly App and Promatch.",
+      "Independently developed and launched the Sonwly App (WeChat mini-app & React Native mobile app for ski enthusiasts). Led a team to build ProMatch, an AI-powered recruitment platform. Built scalable backends, integrated real-time features, and automated data pipelines.",
     icon: React.createElement(FaReact),
-    date: "Sep 2024 - Present",
+    date: "Sep 2024 - April 2025",
+  },
+  {
+    title: "M.Eng in Systems Design Engineering",
+    location: "University of Waterloo, Waterloo, ON",
+    description:
+      "Currently pursuing Master's degree focusing on system design, AI applications and advanced software engineering principles.",
+    icon: React.createElement(LuGraduationCap),
+    date: "Sep 2024 - Present (Expected Sep 2025)",
+  },
+  {
+    title: "Indie Developer (In Progress)",
+    location: "Fitness WeChat Mini App, Remote",
+    description:
+      "Currently independently developing a fitness social app to connect fitness enthusiasts and help them achieve their goals. If you’re interested in learning more or want to collaborate, feel free to reach out!",
+    icon: React.createElement(FaReact),
+    date: "April 2025 - Present",
   },
 ] as const;
-
 export const projectsData = [
-  {
-    title: "Sonwly App",
-    description:
-      "Full-stack WeChat mini-app and React Native mobile app displaying 10+ ski resort data with real-time group chats, social features (follow/like/posts), and e-commerce platform with merchant dashboards. Implemented Spring Boot/MyBatis backend with JWT/OAuth security, MySQL/MongoDB databases, Redis caching, and FCM push notifications. Automated ski condition extraction from 10+ resorts using Selenium/BeautifulSoup on AWS EC2, serving 1,000+ users in BC and California.",
-    tags: ["React Native", "Spring Boot", "MySQL", "Redis", "AWS EC2"],
-    imageUrl: sonwlyImg,
-  },
   {
     title: "Batchship Integration",
     description:
-      "Integrated APIs from multiple carriers and developed features for a warehouse management system used by 50+ clients. Implemented order upload, rate calculations, and online payments with Stripe.",
+      "B2B warehouse dashboard for 100+ business clients, supporting multi-carrier shipping, cross-platform order management, batch uploads, and label printing",
     tags: ["MERN Stack", "Next.js", "Redux", "AWS", "CircleCI"],
     imageUrl: batchshipImg,
   },
   {
+    title: "Sonwly App",
+    description:
+      "Ski community app with real-time resort data, social features, and e-commerce modules.",
+    tags: ["React Native", "Spring Boot", "MySQL", "Redis", "AWS EC2"],
+    imageUrl: sonwlyImg,
+  },
+  {
     title: "Promatch ATS",
     description:
-      "Led team of 2 developers building AI-powered ATS with Qwen API for interview analysis and Xfyun API for speech-to-text. Designed end-to-end solutions with backend AI logic and prompt engineering. Implemented features for generating job descriptions, interview questions, and automated email templates. Developed AI-driven interview system with real-time transcription and automated scoring of candidate responses.",
+      "AI-powered recruitment platform with automated interview and job management.",
     tags: ["Next.js", "Express.js", "MongoDB", "LLMs", "AI APIs"],
     imageUrl: promatchImg,
   },
+  {
+    title: "Canadian Young Golf Association Website",
+    description:
+      "Official site for CYGA, enhancing member engagement and event info.",
+    tags: ["HTML", "CSS", "JavaScript"],
+    imageUrl: cygaImg,
+  },
+  {
+    title: "Hackhub Kids Robotics Platform",
+    description:
+      "Static site for kids robotics program and hackathon event resources.",
+    tags: ["React", "Bootstrap", "Vercel"],
+    imageUrl: hackhubkidImg,
+  },
 ] as const;
-
 export const skillsData = [
   "HTML",
   "CSS",
