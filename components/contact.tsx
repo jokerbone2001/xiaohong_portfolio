@@ -1,15 +1,18 @@
 "use client";
 
-import React from "react";
+import React, { useRef } from "react";
 import SectionHeading from "./section-heading";
 import { motion } from "framer-motion";
 import { useSectionInView } from "@/lib/hooks";
 import { sendEmail } from "@/actions/sendEmail";
 import SubmitBtn from "./submit-btn";
 import toast from "react-hot-toast";
+import { useRouter } from "next/navigation";
 
 export default function Contact() {
   const { ref } = useSectionInView("Contact");
+  const formRef = useRef<HTMLFormElement>(null);
+  const router = useRouter();
 
   return (
     <motion.section
@@ -34,12 +37,13 @@ export default function Contact() {
       <p className="text-gray-700 -mt-6 dark:text-white/80">
         Please contact me directly at{" "}
         <a className="underline" href="mailto:example@gmail.com">
-          example@gmail.com
+          jokerbone2001@gmail.com
         </a>{" "}
         or through this form.
       </p>
 
       <form
+        ref={formRef}
         className="mt-10 flex flex-col dark:text-black"
         action={async (formData) => {
           const { data, error } = await sendEmail(formData);
@@ -50,6 +54,8 @@ export default function Contact() {
           }
 
           toast.success("Email sent successfully!");
+          formRef.current?.reset();
+          router.push("/");
         }}
       >
         <input
