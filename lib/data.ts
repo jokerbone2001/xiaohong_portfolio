@@ -139,7 +139,7 @@ export const projectsData = [
     videos: [
       {
         coverImage: batchshipImg,
-        videoUrl: "https://www.youtube.com/embed/demo-batchship",
+        videoUrl: "https://youtu.be/Hi9ZnKF1bdo",
       },
     ],
   },
@@ -208,7 +208,7 @@ export const projectsData = [
     videos: [
       {
         coverImage: promatchdemo1,
-        videoUrl: "https://www.youtube.com/embed/demo-promatch",
+        videoUrl: "https://www.promatchai.com/en",
       },
     ],
   },

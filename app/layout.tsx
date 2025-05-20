@@ -11,7 +11,8 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Xiaohong | Personal Portfolio",
-  description: "Xiaohong is a full-stack developer with 8 years of experience.",
+  description:
+    "Xiaohong is a full-stack developer with a B.Sc. in Computer Science from SFU and currently pursuing MEng in Systems Design Engineering at University of Waterloo, experienced in web development, AI applications, and cloud solutions.",
 };
 
 export default function RootLayout({
