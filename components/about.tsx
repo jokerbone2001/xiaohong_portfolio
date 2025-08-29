@@ -32,9 +32,12 @@ export default function About() {
       <p className="mb-3">
         As a freelancer, I independently developed and launched the Sonwly App—a
         WeChat mini-app and React Native mobile app for ski enthusiasts—and led
-        a team to build ProMatch, an AI-powered recruitment platform. I am
-        passionate about using technology to solve real-world problems and
-        always eager to learn new tools and frameworks.
+        a team to build ProMatch, an AI-powered recruitment platform. I also
+        currently help local businesses with{" "}
+        <span className="font-medium">SEO optimization</span>, boosting their
+        Google search visibility and online presence. I am passionate about
+        using technology to solve real-world problems and always eager to learn
+        new tools and frameworks.
       </p>
       {!expanded && (
         <button

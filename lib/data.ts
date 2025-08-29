@@ -274,6 +274,11 @@ export const projectsData = [
   },
 ] as const;
 export const skillsData = [
+  // SEO & Marketing
+  "SEO Optimization",
+  "Google Analytics",
+  "Google Search Console",
+
   // Frontend
   "HTML",
   "CSS",
@@ -334,8 +339,6 @@ export const skillsData = [
   // AI & Data
   "Prompt Engineering",
   "OpenAI API",
-  "Qwen API",
-  "Xfyun API",
   "LLMs",
 
   // Web Scraping

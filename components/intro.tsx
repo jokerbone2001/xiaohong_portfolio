@@ -69,8 +69,9 @@ export default function Intro() {
         <span className="font-bold"> Simon Fraser University</span>. I have
         hands-on experience in{" "}
         <span className="italic font-bold">full-stack development</span>,{" "}
-        <span className="italic font-bold">AI applications</span>, and{" "}
-        <span className="italic font-bold">cloud solutions</span>. I've
+        <span className="italic font-bold">SEO optimization</span>,{" "}
+        <span className="italic font-bold">cloud solutions</span>, and{" "}
+        <span className="italic font-bold">AI applications</span>. I've
         contributed to startups and established teams, building scalable web
         platforms, management dashboard, automating workflows, and leading
         projects from concept to deployment.
