@@ -20,24 +20,25 @@ export default function About() {
     >
       <SectionHeading>About me</SectionHeading>
       <p className="mb-3">
-        I have hands-on experience as a{" "}
-        <span className="font-medium">full-stack engineer</span> and{" "}
-        <span className="font-medium">web developer</span> at both startups and
-        established teams. My work covers API integration, building scalable web
-        platforms, automating workflows, and leading projects from concept to
-        deployment. Notable projects include a warehouse management system at
-        Batchship, legal workflow automation at LeGT.ai, and a global hackathon
-        platform at Hackhub.
+        With experience across both startups and established companies, I
+        specialize in taking projects from initial concept through to
+        deployment. I've built systems that serve hundreds of users daily,
+        integrated complex APIs, and led cross-functional teams to deliver
+        scalable solutions. Notable projects include a warehouse management
+        system at Batchship, legal workflow automation at LeGT.ai, a global
+        hackathon platform at Hackhub, and currently a healthcare management
+        platform at Axon Health.
       </p>
       <p className="mb-3">
-        As a freelancer, I independently developed and launched the Sonwly App—a
-        WeChat mini-app and React Native mobile app for ski enthusiasts—and led
-        a team to build ProMatch, an AI-powered recruitment platform. I also
-        currently help local businesses with{" "}
-        <span className="font-medium">SEO optimization</span>, boosting their
-        Google search visibility and online presence. I am passionate about
-        using technology to solve real-world problems and always eager to learn
-        new tools and frameworks.
+        As a freelancer and entrepreneur, I have independently developed
+        multiple projects: (1) Sonwly App—a WeChat mini-app and React Native
+        mobile app for ski enthusiasts, (2) ProMatch—an AI-powered recruitment
+        platform where I led a team, (3) a fitness ecosystem platform with
+        calorie tracking and gym/trainer marketplace features, and (4) Website
+        migration and SEO optimization services, helping local businesses
+        migrate from Wix to cost-effective solutions while providing SEO
+        optimization. I'm passionate about using technology to solve real-world
+        problems and always eager to learn new tools and frameworks.
       </p>
       {!expanded && (
         <button
@@ -50,38 +51,48 @@ export default function About() {
       {expanded && (
         <>
           <p className="mb-3">
-            In addition to my academic and professional journey, I am actively
-            involved in community and volunteer work. As a web developer and
-            event organizer for the{" "}
-            <span className="font-medium">Canadian Young Golf Association</span>
-            , I collaborated with a team to develop the official
-            website—boosting user experience and online engagement—and led the
-            planning and execution of golf competitions, managing logistics and
-            volunteers to ensure smooth events and strengthen my leadership
-            skills.
-          </p>
-
-          <p className="mb-3">
-            Outside of tech, I am passionate about skiing—which inspired me to
-            create the Sonwly App for the ski community. I also enjoy golf,
-            video games, and exploring emerging fields such as AI products,
-            brain-computer interfaces, robotics, and Web3. I love keeping up
-            with the latest trends in technology and am always curious about how
-            these innovations can shape the future.
+            Over time I realized my role in many projects has evolved beyond
+            "just coding." I increasingly operate like a product owner: aligning
+            with stakeholders, abstracting and prioritizing requirements, and
+            delivering something adoptable and valuable under real constraints.
+            As cloud services and AI tooling reduce pure technical friction,
+            sustainable value now depends more on: identifying real pain points,
+            structuring information and experience, and shipping solutions that
+            can evolve.
           </p>
           <p className="mb-3">
-            I enjoy exploring new technologies and building products that
-            connect people. Currently, I am independently developing a fitness
-            social app that aims to bring together fitness enthusiasts and help
-            them achieve their goals. If you’re interested in learning more or
-            want to collaborate, feel free to reach out!
+            In the community space, I actively provide pro bono technical
+            support for organizations and events. For the{" "}
+            <span className="font-medium">Canadian Young Golf Association</span>{" "}
+            I designed and built the official site—improving information
+            hierarchy, clarity, and visual presentation. For the{" "}
+            <span className="font-medium">EduHacks</span> hackathon, I created
+            recruitment & promotional pages serving applicants, judges, and
+            partners. I also helped build youth robotics educational/partnership
+            sites that increased credibility and collaboration opportunities.
           </p>
-          <p>
-            I believe in continuous learning and giving back to the community.
-            My experiences have taught me the value of teamwork, adaptability,
-            and clear communication. Looking ahead, I am eager to further
-            develop my skills in AI and cloud computing, and to contribute to
-            projects that make a real impact.
+          <p className="mb-3">
+            These experiences shaped an emerging product framework I follow: (1)
+            validate whether the problem is truly worth solving; (2) align fast
+            using the smallest viable artifact (prototype / MVP / automation
+            script); (3) iterate with real user feedback + data; (4) invest in
+            architecture, performance, and observability only when timing and
+            traction justify it—avoiding premature complexity.
+          </p>
+          <p className="mb-3">
+            I now position myself as a product-minded engineer with strong
+            execution, working toward becoming a macro-level{" "}
+            <span className="font-medium">
+              Product Manager / Technical Product Lead
+            </span>
+            —someone who understands both system constraints and business
+            intent, and can convert ambiguous objectives into clear, measurable
+            roadmaps.
+          </p>
+          <p className="mb-3">
+            If you’re exploring how to validate an idea at low cost, productize
+            a manual workflow, or turn scattered information into a structured,
+            high-signal experience—I’d be happy to connect or collaborate.
           </p>
           <button
             className="mt-2 text-blue-600 hover:underline"

@@ -61,12 +61,9 @@ export default function Intro() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        Hello, I'm <span className="font-bold">XIAOHONG XU.</span> I'm currently
-        pursuing my <span className="font-bold">Master of Engineering</span> in{" "}
-        <span className="font-bold">Systems Design Engineering</span> at the{" "}
-        <span className="font-bold">University of Waterloo</span>, after earning
-        my B.Sc. in <span className="font-bold">Computer Science</span> from
-        <span className="font-bold"> Simon Fraser University</span>. I have
+        Hi, I'm <span className="font-bold">XIAOHONG XU</span> — MEng Systems
+        Design (Waterloo ’25) & BSc CS (SFU ’24). I’m a product‑minded
+        full‑stack engineer helping a startup build prototypes and MVPs and have
         hands-on experience in{" "}
         <span className="italic font-bold">full-stack development</span>,{" "}
         <span className="italic font-bold">SEO optimization</span>,{" "}
@@ -74,7 +71,12 @@ export default function Intro() {
         <span className="italic font-bold">AI applications</span>. I've
         contributed to startups and established teams, building scalable web
         platforms, management dashboard, automating workflows, and leading
-        projects from concept to deployment.
+        projects from concept to deployment.{" "}
+        <span className="block mt-3">
+          Beyond code, I operate like a product owner—validating real problems,
+          shaping lean MVPs, aligning stakeholders, and structuring information
+          into scalable, evolving user experiences.
+        </span>
       </motion.h1>
       <motion.div
         className="flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium"
@@ -86,7 +88,7 @@ export default function Intro() {
       >
         <Link
           href="#contact"
-          className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
+          className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition"
           onClick={() => {
             setActiveSection("Contact");
             setTimeOfLastClick(Date.now());
