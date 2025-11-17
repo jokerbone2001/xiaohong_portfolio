@@ -20,6 +20,8 @@ import promatchdemo1 from "@/public/image/promatch-demo1.png";
 import promatchdemo2 from "@/public/image/promatch-demo2.png";
 import axonhealth from "@/public/image/axonhealth.png";
 import axonhealth2 from "@/public/image/axonhealth2.png";
+import xliiumImg from "@/public/image/xliium-placeholder.png";
+
 export const links = [
   {
     name: "Home",
@@ -118,6 +120,14 @@ export const experiencesData = [
       "Building MVP features for a healthcare management platform serving treatment centers: patient & alumni engagement modules, provider dashboards, secure role-based data flows, and early retention / outcomes tracking instrumentation.",
     icon: React.createElement(CgWorkAlt),
     date: "Aug 2025 - Present",
+  },
+  {
+    title: "Co-Founder & Technical Lead",
+    location: "XlIUM Technologies Inc. · Ontario, Canada",
+    description:
+      "Co-founded a B2B digital marketing and web development company specializing in helping local businesses grow online. Led technical strategy, built company website, established service delivery processes, and developed custom solutions for clients including SEO optimization, website migrations, and performance improvements. Collaborated with team members to deliver comprehensive digital marketing solutions that combine technical excellence with strategic business growth.",
+    icon: React.createElement(HiOutlineLightBulb),
+    date: "Sep 2025 - Present",
   },
 ] as const;
 export const projectsData = [
@@ -232,7 +242,48 @@ export const projectsData = [
       },
     ],
   },
+  {
+    id: "xliium",
+    title: "XlIUM Technologies Inc.",
+    description:
+      "Co-founded digital marketing agency specializing in local business growth through custom websites, SEO optimization, and proven local search strategies.",
+    tags: [
+      "Co-Founder",
+      "Next.js",
+      "SEO",
+      "Local Search",
+      "B2B SaaS",
+      "Team Leadership",
+    ],
+    imageUrl: xliiumImg,
+    detailedDescription:
+      "XlIUM Technologies Inc. is a B2B digital marketing and web development company I co-founded to help local businesses across North America grow their online presence and attract more customers. Our comprehensive service offering includes SEO and local search optimization, website redesign and performance improvements, social media management, website migration between platforms, custom feature development, and ongoing technical support. The company serves diverse local businesses including beauty salons, bakeries, medical clinics, retail shops, and professional service providers. We focus on delivering measurable results through a data-driven, technical-first approach that combines modern web development with proven SEO strategies.",
+    contributions: [
+      "Co-founded XlIUM Technologies Inc. as Technical Lead and Full-Stack Developer, establishing the company vision, service offerings, and technical infrastructure from the ground up.",
 
+      "Led the development of our company website (xliium.com) using Next.js, implementing performance optimization, SEO best practices, and conversion-focused design to attract and convert potential clients.",
+
+      "Built and refined our service delivery process, from initial discovery calls and technical audits to implementation and ongoing support, ensuring consistent quality and client satisfaction.",
+
+      "Designed and implemented website migration strategies that help clients move from costly platforms (like Wix) to more cost-effective solutions while preserving SEO rankings and reducing operational costs by up to 60%.",
+
+      "Established technical SEO methodologies and local search optimization strategies that improve clients' visibility on Google and Google Maps, resulting in increased local customer acquisition.",
+
+      "Collaborated with team members Shuyang (Daphne) Liu (Client Success & Project Manager) and Hakim Nshimiyimana (SEO Specialist) to deliver comprehensive solutions that combine technical excellence with strategic marketing.",
+
+      "Developed custom features and integrations for client websites including online booking systems, contact forms, e-commerce functionality, membership areas, analytics implementation, and email newsletter systems.",
+
+      "Created transparent pricing models and project management workflows that eliminate hidden fees, long-term contracts, and communication delays, providing clients with direct access to our technical team.",
+    ].join("\n\n"),
+    companyUrl: "https://www.xliium.com/",
+    coverImg: xliiumImg,
+    videos: [
+      {
+        coverImage: xliiumImg,
+        videoUrl: "https://www.xliium.com/",
+      },
+    ],
+  },
   {
     id: "promatch",
     title: "Promatch ATS",

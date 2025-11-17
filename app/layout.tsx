@@ -16,7 +16,6 @@ export const metadata = {
   description:
     "Xiaohong is a full-stack developer with a B.Sc. in Computer Science from SFU and currently pursuing MEng in Systems Design Engineering at University of Waterloo, experienced in web development, AI applications, and cloud solutions.",
 };
-
 export default function RootLayout({
   children,
 }: {
