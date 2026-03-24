@@ -1,4 +1,4 @@
-import React from "react";
+﻿import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
@@ -75,7 +75,7 @@ export const experiencesData = [
   },
   {
     title: "Web Developer Intern",
-    location: "LeGT.ai, USA · Remote",
+    location: "LeGT.ai, USA 路 Remote",
     description:
       "Automated H1B visa application process reducing manual effort by 50%. Integrated ChatGPT API to streamline O-1 visa template generation for legal professionals.",
     icon: React.createElement(CgWorkAlt),
@@ -83,7 +83,7 @@ export const experiencesData = [
   },
   {
     title: "Full-Stack Engineer Intern",
-    location: "Batchship.Inc. Santa Fe Springs, CA, USA · Remote",
+    location: "Batchship.Inc. Santa Fe Springs, CA, USA 路 Remote",
     description:
       "Integrated APIs from UPS, USPS, Amazon, GLS, FedEx to support B2B shipping services for a warehouse management system used by 100+ business clients. Developed single/batch order uploads, rate calculations, Stripe online payments, and order sync with Shipstation/TikTok, reducing task time by 60%. Collaborated on responsive landing page design. Built secure, scalable APIs for carrier integrations and resolved technical issues including failed shipments and API challenges.",
     icon: React.createElement(CgWorkAlt),
@@ -98,10 +98,10 @@ export const experiencesData = [
     date: "Sep 2024 - Apr 2025",
   },
   {
-    title: "Indie Developer – Fitness Mini Program",
-    location: "WeChat Ecosystem · Remote",
+    title: "Indie Developer 鈥?Fitness Mini Program",
+    location: "WeChat Ecosystem 路 Remote",
     description:
-      "Concept-to-launch build of a fitness WeChat mini program: multi‑sided platform for gyms, trainers, and athletes. Implemented nearby gym & trainer directory with rich profiles, rating & review system, AI photo-based food nutrition & calorie analysis with history tracking, and social layer (friends, posts, group chat).",
+      "Concept-to-launch build of a fitness WeChat mini program: multi鈥憇ided platform for gyms, trainers, and athletes. Implemented nearby gym & trainer directory with rich profiles, rating & review system, AI photo-based food nutrition & calorie analysis with history tracking, and social layer (friends, posts, group chat).",
     icon: React.createElement(CgWorkAlt),
     date: "May 2025 - Sep 2025",
   },
@@ -115,7 +115,7 @@ export const experiencesData = [
   },
   {
     title: "Product-Focused Full-Stack Intern",
-    location: "Axon Health · Remote",
+    location: "Axon Health 路 Remote",
     description:
       "Building MVP features for a healthcare management platform serving treatment centers: patient & alumni engagement modules, provider dashboards, secure role-based data flows, and early retention / outcomes tracking instrumentation.",
     icon: React.createElement(CgWorkAlt),
@@ -123,7 +123,7 @@ export const experiencesData = [
   },
   {
     title: "Co-Founder & Technical Lead",
-    location: "XlIUM Technologies Inc. · Ontario, Canada",
+    location: "XlIUM Technologies Inc. 路 Ontario, Canada",
     description:
       "Co-founded a B2B digital marketing and web development company specializing in helping local businesses grow online. Led technical strategy, built company website, established service delivery processes, and developed custom solutions for clients including SEO optimization, website migrations, and performance improvements. Collaborated with team members to deliver comprehensive digital marketing solutions that combine technical excellence with strategic business growth.",
     icon: React.createElement(HiOutlineLightBulb),
@@ -131,6 +131,48 @@ export const experiencesData = [
   },
 ] as const;
 export const projectsData = [
+  {
+    id: "axonhealth",
+    title: "Axon Health Platform",
+    description:
+      "Multi-role healthcare engagement MVP (clinicians, patients, admins) with secure messaging, treatment tracking primitives, and RBAC foundation.",
+    tags: [
+      "Swagger/OpenAPI",
+      "RBAC",
+      "Docker",
+      "AWS S3",
+      "AWS EC2/Route53/ACM SSL/CLB",
+      "PM2 Process Manager",
+    ],
+    imageUrl: axonhealth2,
+    detailedDescription:
+      "Axon Health is a cloud-based engagement and management platform for addiction treatment centers, enabling secure longitudinal interaction between clinicians, patients, and administrative staff. The MVP delivers multi-role access (Doctor / Patient / Manager / Admin), secure messaging foundations, treatment progress tracking primitives, and an extensible analytics surface for referral & retention insights. As Technical Lead Intern, I owned end-to-end system definition鈥攆rom architectural decisions and environment strategy to developer workflow orchestration and executive reporting鈥攅stablishing a production-ready foundation capable of iterative feature expansion.",
+
+    contributions: [
+      "Led a 3-person pod as Technical Lead Intern; ran weekly CEO syncs on scope trade鈥憃ffs, delivery risks, and integration sequencing (web / mobile / backend).",
+
+      "Defined a modular Express.js + React 'clean monolith' (controllers / routes / models / middlewares / config) intentionally structured for future service extraction and analytics modules.",
+
+      "Designed multi鈥憆ole data + engagement model in MongoDB (Mongoose) with explicit role flags (admin / manager / coordinator / alumni / vendor) and compound indexes (role, org, activity/status, soft鈥慸elete) to optimize high鈥慺requency queries.",
+
+      "Implemented auth & RBAC foundation: JWT verification + role hydration middleware enabling least鈥憄rivilege evolution and future fine鈥慻rained policy layers.",
+
+      "Established code鈥慺irst OpenAPI documentation (swagger鈥慾sdoc tagged route scanning, versioned v1 endpoints) plus centralized validation & error envelope standard鈥攊mproving integration clarity and parallel frontend velocity.",
+
+      "Built environment & DX layer: dotenv + cross-env (CORS/HTTPS toggles), standardized npm scripts (dev/prod/test, health-check, mock seed, role audit) reducing friction & supporting iterative migration from legacy SQL to Mongo.",
+      "Configured production infrastructure on AWS: provisioned EC2 (Ubuntu) instance with Elastic IP and Route53 DNS routing, deployed Node.js backend under PM2 supervision, and set up NGINX reverse proxy for internal routing. Integrated AWS Classic Load Balancer (CLB) for SSL termination via ACM-issued certificates, enabling secure HTTPS access.",
+      "Delivered production-ready MVP: authenticated multi鈥憆ole API (users, forms, activities, referrals, alumni) with indexed queries & Swagger UI docs鈥攁ccelerating iteration velocity and establishing an extensible API surface for engagement & analytics expansion.",
+    ].join("\n\n"),
+
+    companyUrl: "https://axonhealth.io/",
+    coverImg: axonhealth,
+    videos: [
+      {
+        coverImage: axonhealth,
+        videoUrl: "https://axonhealth.io/",
+      },
+    ],
+  },
   {
     id: "batchship",
     title: "Batchship",
@@ -197,48 +239,6 @@ export const projectsData = [
       {
         coverImage: sonwlyImg3,
         videoUrl: "https://www.loom.com/share/7ac6d2c3a7ce4a7b8cc75e394236ae1d",
-      },
-    ],
-  },
-  {
-    id: "axonhealth",
-    title: "Axon Health Platform",
-    description:
-      "Multi-role healthcare engagement MVP (clinicians, patients, admins) with secure messaging, treatment tracking primitives, and RBAC foundation.",
-    tags: [
-      "Swagger/OpenAPI",
-      "RBAC",
-      "Docker",
-      "AWS S3",
-      "AWS EC2/Route53/ACM SSL/CLB",
-      "PM2 Process Manager",
-    ],
-    imageUrl: axonhealth2,
-    detailedDescription:
-      "Axon Health is a cloud-based engagement and management platform for addiction treatment centers, enabling secure longitudinal interaction between clinicians, patients, and administrative staff. The MVP delivers multi-role access (Doctor / Patient / Manager / Admin), secure messaging foundations, treatment progress tracking primitives, and an extensible analytics surface for referral & retention insights. As Technical Lead Intern, I owned end-to-end system definition—from architectural decisions and environment strategy to developer workflow orchestration and executive reporting—establishing a production-ready foundation capable of iterative feature expansion.",
-
-    contributions: [
-      "Led a 3-person pod as Technical Lead Intern; ran weekly CEO syncs on scope trade‑offs, delivery risks, and integration sequencing (web / mobile / backend).",
-
-      "Defined a modular Express.js + React ‘clean monolith’ (controllers / routes / models / middlewares / config) intentionally structured for future service extraction and analytics modules.",
-
-      "Designed multi‑role data + engagement model in MongoDB (Mongoose) with explicit role flags (admin / manager / coordinator / alumni / vendor) and compound indexes (role, org, activity/status, soft‑delete) to optimize high‑frequency queries.",
-
-      "Implemented auth & RBAC foundation: JWT verification + role hydration middleware enabling least‑privilege evolution and future fine‑grained policy layers.",
-
-      "Established code‑first OpenAPI documentation (swagger‑jsdoc tagged route scanning, versioned v1 endpoints) plus centralized validation & error envelope standard—improving integration clarity and parallel frontend velocity.",
-
-      "Built environment & DX layer: dotenv + cross-env (CORS/HTTPS toggles), standardized npm scripts (dev/prod/test, health-check, mock seed, role audit) reducing friction & supporting iterative migration from legacy SQL to Mongo.",
-      "Configured production infrastructure on AWS: provisioned EC2 (Ubuntu) instance with Elastic IP and Route53 DNS routing, deployed Node.js backend under PM2 supervision, and set up NGINX reverse proxy for internal routing. Integrated AWS Classic Load Balancer (CLB) for SSL termination via ACM-issued certificates, enabling secure HTTPS access.",
-      "Delivered production-ready MVP: authenticated multi‑role API (users, forms, activities, referrals, alumni) with indexed queries & Swagger UI docs—accelerating iteration velocity and establishing an extensible API surface for engagement & analytics expansion.",
-    ].join("\n\n"),
-
-    companyUrl: "https://axonhealth.io/",
-    coverImg: axonhealth,
-    videos: [
-      {
-        coverImage: axonhealth,
-        videoUrl: "https://axonhealth.io/",
       },
     ],
   },
@@ -364,17 +364,17 @@ export const projectsData = [
     ],
     imageUrl: beyondpainclinic, // TODO: replace with real clinic image asset when available
     detailedDescription:
-      "Beyond Pain Clinic is a modernized web platform for a local acupuncture & massage therapy practice in Kitchener. The engagement began by auditing an outdated Wix site and rebuilding it from scratch in a performance‑oriented Next.js codebase deployed on Vercel. The migration removed proprietary platform lock‑in, reduced annual operational + hosting/tooling costs by approximately 60%, and enabled full control over technical SEO, structured data, and extensibility. The site now functions as both a marketing presence and an operational layer—integrating booking, calendar synchronization, and automated patient reminder workflows. A custom serverless reminder pipeline ensures patients receive timely confirmations and 24‑hour advance notifications without manual staff effort.",
+      "Beyond Pain Clinic is a modernized web platform for a local acupuncture & massage therapy practice in Kitchener. The engagement began by auditing an outdated Wix site and rebuilding it from scratch in a performance鈥憃riented Next.js codebase deployed on Vercel. The migration removed proprietary platform lock鈥慽n, reduced annual operational + hosting/tooling costs by approximately 60%, and enabled full control over technical SEO, structured data, and extensibility. The site now functions as both a marketing presence and an operational layer鈥攊ntegrating booking, calendar synchronization, and automated patient reminder workflows. A custom serverless reminder pipeline ensures patients receive timely confirmations and 24鈥慼our advance notifications without manual staff effort.",
     contributions: [
       "Conducted a structured content + UX audit of the legacy Wix site, then executed an information architecture + visual redesign (not a simple 1:1 clone): clarified service hierarchy, simplified navigation, improved accessibility semantics (ARIA roles, heading structure, alt text coverage), and implemented a modern responsive layout system in Next.js.",
 
-      "Implemented statically optimized pages (ISR / SSG) with lean above‑the‑fold payload, prefetching, image optimization, and Core Web Vitals conscious layout to improve load & interaction metrics.",
+      "Implemented statically optimized pages (ISR / SSG) with lean above鈥憈he鈥慺old payload, prefetching, image optimization, and Core Web Vitals conscious layout to improve load & interaction metrics.",
 
-      "Engineered technical SEO foundation: canonical & meta tags, JSON‑LD localBusiness schema, Open Graph + Twitter cards, sitemap + robots, logical URL taxonomy, descriptive structured headings, and optimized Lighthouse SEO score.",
+      "Engineered technical SEO foundation: canonical & meta tags, JSON鈥慙D localBusiness schema, Open Graph + Twitter cards, sitemap + robots, logical URL taxonomy, descriptive structured headings, and optimized Lighthouse SEO score.",
 
-      "Configured measurement loop using Google Search Console + Google Analytics (GA4) for query impression tracking, click‑through diagnostics, and conversion funnel instrumentation (booking CTA interactions).",
+      "Configured measurement loop using Google Search Console + Google Analytics (GA4) for query impression tracking, click鈥憈hrough diagnostics, and conversion funnel instrumentation (booking CTA interactions).",
 
-      "Developed a booking workflow integrated with Google Calendar API: real‑time availability mapping, conflict prevention, and provider assignment logic with time‑zone safe handling.",
+      "Developed a booking workflow integrated with Google Calendar API: real鈥憈ime availability mapping, conflict prevention, and provider assignment logic with time鈥憐one safe handling.",
 
       "Built serverless reminder + notification pipeline: AWS EventBridge scheduled rule triggers Lambda which invokes internal API to query upcoming appointments (24h window) and dispatches email reminders (extensible to SMS).",
 
@@ -382,7 +382,7 @@ export const projectsData = [
 
       "Refactored content & component system for future multilingual / service expansion (modular service description blocks + metadata config).",
 
-      "Delivered cost reduction (~60%) by eliminating Wix subscription + plugin overhead in favor of Vercel + pay‑per‑use serverless architecture.",
+      "Delivered cost reduction (~60%) by eliminating Wix subscription + plugin overhead in favor of Vercel + pay鈥憄er鈥憉se serverless architecture.",
     ].join("\n\n"),
     companyUrl: "https://www.beyondpainclinic.com/",
     coverImg: beyondpainclinic, // placeholder
